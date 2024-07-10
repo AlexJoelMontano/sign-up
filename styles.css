@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  height: 100%;
+  background-image: url("./img/VW.jpg");
+  background-size: cover;
+}
+
+.title-container {
+  background-image: url("./img/VW.jpg");
+  background-size: cover;
+  background-position-x: 26%;
+  width: 35%;
+  display: flex;
+  padding-top: 13%;
+}
+
+.title-background {
+  background-color: rgba(26, 26, 26, 0.6);
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title-words {
+  color: #c2c6d6;
+}
+
+#main-logo {
+  margin-right: 0.6em;
+}
+
+.title-words > h1 {
+  margin: 0.6rem;
+}
+
+.main-container {
+  background-color: #c2c6d6;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.979;
+}
+
+.mainForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-container {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #a4a9be;
+  box-shadow: 2px 2px 16px #525667;
+}
+
+.space-between {
+  display: inherit;
+  justify-content: space-around;
+}
+
+.vertical {
+  display: inherit;
+  flex-direction: column;
+}
+
+input {
+  border-color: #525667;
+  border-radius: 4px;
+  background-color: rgb(245, 245, 245);
+}
+
+input:focus {
+  transform: scale(102%);
+  box-shadow: 2px 2px 6px #525667;
+}
+
+label {
+  font-size: small;
+}
+
+b {
+  font-weight: 500;
+}
+
+.bottom-container {
+  width: 75%;
+  margin-top: 6%;
+}
+
+.submit-btn {
+  margin-left: 2%;
+  border-radius: 6px;
+  height: 2.6rem;
+  width: 10rem;
+  background-color: #29334c;
+  color: rgb(245, 245, 245);
+}
+
+.already {
+  margin-top: 4%;
+  font-size: small;
+}
+
+span > a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
