@@ -20,10 +20,13 @@ time, mark, audio, video{
 }
 
 $bg-color: #c2c6d6;
-$bg-img:url("./img/VW.jpg");
-$title-bg: rgb(26,26,26,.6);
+$title-img:url("./img/VW.jpg");
+$bg-img:url("./img/GTI.jpg");
+$title-bg: rgba(26,26,26,.6);
 $title-color:#d8def8;
 $main-bg-color: #a4a9be;
+$medium-text:calc(0.5rem + 0.6vw);
+$large-text:calc(1 + 1vw);
 
 html{
 	height: 100%;
@@ -35,11 +38,13 @@ body{
 	display: flex;
 	height: 100%;
 	background-image: $bg-img;
-	background-size: cover;
+	background-size: 100%;
+	background-position-y: 80%;
+	background-position-x: 80%;
 }
 
 .title-container{
-	background-image: $bg-img;
+	background-image: $title-img;
 	background-size: cover;
 	background-position-x: 26%;
 	width: 35%;
@@ -70,7 +75,17 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: .979;
+	opacity: .946;
+}
+.hero-title{
+	margin-top:6%;
+	width: 80%;
+	font-size: $large-text;
+}
+.hero-text{
+	width: 80%;
+	font-size: $medium-text;
+	margin-bottom: 4%;
 }
 .mainForm{
 	width: 100%;
@@ -79,8 +94,10 @@ body{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	box-shadow: -1px 0px 6px 0px #000413;
 }
 .input-container{
+	margin-top: 2%;
 	height: 40%;
 	width: 100%;
 	display: flex;
@@ -88,6 +105,7 @@ body{
 	justify-content: space-evenly;
 	background-color: $main-bg-color;
 	box-shadow: 2px 2px 16px  #525667;
+	padding-block: 2%;
 }
 .space-between{
 	display: inherit;
@@ -114,7 +132,8 @@ b{
 }
 .bottom-container{
 	width: 75%;
-	margin-top: 6%;
+	margin-top: 4%;
+	margin-bottom: 6%;
 }
 .submit-btn{
 	margin-left: 2%;
@@ -125,9 +144,17 @@ b{
 	color: rgb(245,245,245);
 }
 .already{
-	margin-top: 4%;
+	margin-top: 2%;
 	font-size: small;
 }
 span>a{
 	text-decoration: none;
+	color: #346aa7;
+}
+span>a:hover{
+	text-decoration: underline;
+}
+em{
+	font-style: italic;
+	font-weight: 600;
 }

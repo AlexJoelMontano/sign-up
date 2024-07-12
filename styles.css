@@ -16,21 +16,20 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 html {
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 body {
   height: 100%;
   display: flex;
   height: 100%;
-  background-image: url("./img/VW.jpg");
-  background-size: cover;
-}
+  background-image: url("./img/GTI.jpg");
+  background-size: 100%;
+  background-position-y: 80%;
+  background-position-x: 80%; }
 
 .title-container {
   background-image: url("./img/VW.jpg");
@@ -38,8 +37,7 @@ body {
   background-position-x: 26%;
   width: 35%;
   display: flex;
-  padding-top: 13%;
-}
+  padding-top: 13%; }
 
 .title-background {
   background-color: rgba(26, 26, 26, 0.6);
@@ -47,20 +45,16 @@ body {
   height: max-content;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-}
+  align-items: center; }
 
 .title-words {
-  color: #c2c6d6;
-}
+  color: #c2c6d6; }
 
 #main-logo {
-  margin-right: 0.6em;
-}
+  margin-right: 0.6em; }
 
 .title-words > h1 {
-  margin: 0.6rem;
-}
+  margin: 0.6rem; }
 
 .main-container {
   background-color: #c2c6d6;
@@ -69,8 +63,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.979;
-}
+  opacity: .946; }
+
+.hero-title {
+  margin-top: 6%;
+  width: 80%;
+  font-size: calc(1 + 1vw); }
+
+.hero-text {
+  width: 80%;
+  font-size: calc(0.5rem + 0.6vw);
+  margin-bottom: 4%; }
 
 .mainForm {
   width: 100%;
@@ -79,51 +82,46 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+  box-shadow: -1px 0px 6px 0px #000413; }
 
 .input-container {
+  margin-top: 2%;
   height: 40%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   background-color: #a4a9be;
-  box-shadow: 2px 2px 16px #525667;
-}
+  box-shadow: 2px 2px 16px  #525667;
+  padding-block: 2%; }
 
 .space-between {
   display: inherit;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .vertical {
   display: inherit;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 input {
   border-color: #525667;
   border-radius: 4px;
-  background-color: rgb(245, 245, 245);
-}
+  background-color: whitesmoke; }
 
 input:focus {
   transform: scale(102%);
-  box-shadow: 2px 2px 6px #525667;
-}
+  box-shadow: 2px 2px 6px #525667; }
 
 label {
-  font-size: small;
-}
+  font-size: small; }
 
 b {
-  font-weight: 500;
-}
+  font-weight: 500; }
 
 .bottom-container {
   width: 75%;
-  margin-top: 6%;
-}
+  margin-top: 4%;
+  margin-bottom: 6%; }
 
 .submit-btn {
   margin-left: 2%;
@@ -131,16 +129,21 @@ b {
   height: 2.6rem;
   width: 10rem;
   background-color: #29334c;
-  color: rgb(245, 245, 245);
-}
+  color: whitesmoke; }
 
 .already {
-  margin-top: 4%;
-  font-size: small;
-}
+  margin-top: 2%;
+  font-size: small; }
 
 span > a {
   text-decoration: none;
-}
+  color: #346aa7; }
+
+span > a:hover {
+  text-decoration: underline; }
+
+em {
+  font-style: italic;
+  font-weight: 600; }
 
 /*# sourceMappingURL=styles.css.map */
