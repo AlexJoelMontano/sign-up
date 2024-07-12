@@ -27,6 +27,7 @@ $title-color:#d8def8;
 $main-bg-color: #a4a9be;
 $medium-text:calc(0.5rem + 0.6vw);
 $large-text:calc(1 + 1vw);
+$small-text:calc(0.4rem + 0.4vw);
 
 html{
 	height: 100%;
@@ -158,3 +159,23 @@ em{
 	font-style: italic;
 	font-weight: 600;
 }
+#inputPass:valid, #validPass:valid{
+	border-color: green;
+}
+ input:invalid{
+	border-color:red;
+}
+#passTips{
+	position: absolute;
+	top:40%;
+	left:60%;
+	font-size: $small-text;
+	width: 12rem;
+}
+.invalid{
+	color:rgb(171, 1, 1);
+}
+.valid{
+	color:green;
+}
+
