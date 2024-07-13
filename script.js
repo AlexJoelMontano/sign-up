@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const initPass = document.querySelector("#inputPass");
 const validPass = document.querySelector("#validPass");
 let passTips = document.querySelector("#passTips");
+let passwordLabels = document.querySelectorAll(".check");
 
 let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
@@ -23,7 +24,7 @@ initPass.addEventListener("keyup", () =>{
     if(initPass.value.match(lowerCaseLetters)) {  
         letter.style.color = "green";
     } else {
-        letter.style.color = "red";
+        letter.style.color = "rgb(171, 1, 1)";
     }
     
     // Validate capital letters
@@ -31,7 +32,7 @@ initPass.addEventListener("keyup", () =>{
     if(initPass.value.match(upperCaseLetters)) {  
         capital.style.color = "green";
     } else {
-        capital.style.color = "red";
+        capital.style.color = "rgb(171, 1, 1)";
     }
   
     // Validate numbers
@@ -39,18 +40,26 @@ initPass.addEventListener("keyup", () =>{
     if(initPass.value.match(numbers)) {  
       number.style.color = "green";
     } else {
-      number.style.color = "red";
+      number.style.color = "rgb(171, 1, 1)";
     }
     
     // Validate length
     if(initPass.value.length >= 8) {
       length.style.color = "green";
     } else {
-      length.style.color = "red";
+      length.style.color = "rgb(171, 1, 1)";
     }
 })
 
-validPass.addEventListener("keyup", () =>{
-    if(validPass.value == initPass.value){
-    }
-})
+function check() {
+  if (document.querySelector("#inputPass").value ==
+  document.querySelector("#validPass").value) {
+      initPass.className = "valid";
+      validPass.className = "valid";
+  
+  } else {
+      initPass.className = "invalid";
+      validPass.className = "invalid";
+  }
+}
+
