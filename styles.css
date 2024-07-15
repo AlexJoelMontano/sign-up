@@ -146,10 +146,13 @@ em {
   font-style: italic;
   font-weight: 600; }
 
+#email:invalid {
+  border-color: red; }
+
 #inputPass:valid, #validPass:valid {
   border-color: green; }
 
-input:invalid {
+inputPass:invalid, validPass:invalid {
   border-color: red; }
 
 #passTips {
@@ -157,12 +160,23 @@ input:invalid {
   top: 40%;
   left: 60%;
   font-size: calc(0.4rem + 0.4vw);
-  width: 12rem; }
+  width: 20rem;
+  height: 20rem; }
 
 .invalid {
   color: #ab0101; }
 
 .valid {
   color: green; }
+
+.small-red {
+  font-size: calc(0.4rem + 0.4vw);
+  color: #ab0101;
+  position: absolute;
+  left: 62%;
+  top: 60%; }
+
+input {
+  width: 12rem; }
 
 /*# sourceMappingURL=styles.css.map */
